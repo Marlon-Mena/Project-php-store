@@ -29,7 +29,7 @@
                 echo "$nome NÂO FOI CADASTRADO";
             }
             ?>
-            <a href="index.php" class="btn-voltar">Home</a>
+            <a href="index.html" class="btn-voltar">Home</a>
         </div>
     </div>
 

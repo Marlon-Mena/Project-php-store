@@ -1,8 +1,8 @@
 <?php
     define('HOST', 'localhost');
-    define('USER', 'roor');
+    define('USER', 'root');
     define('PASS', '');
     define('BASE', 'cadastro');
 
-    $conn = new MySQLi(HOST,USER,PASS,BASE);
+    $conn = new MySQLi(HOST,USER,PASS,BASE); //conn variavel de conexão do banco de dados
 ?>
