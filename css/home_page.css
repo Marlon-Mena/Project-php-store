@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100px;
+    min-height: 75px;
+    padding: 20px 100px;
+    background: rgba(62, 56, 56, 0);
+    border: 1px solid rgba(102, 101, 101, 0.401);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+    border-radius: 1px;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+    position: absolute;
+    left: 50px;
+    top: 4px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #46278eb3;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.navbar a:hover{
+    color: #231641b3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: perspective(1000px) rotateY(15deg) rotateX(15deg);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Barra lateral no lado direito */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; /* Posiciona a barra no lado direito */
+    width: 250px;
+    height: 100%;
+    background: rgba(184, 182, 182, 0.46);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    backdrop-filter: blur(10px);
+    color: white;
+    transform: translateX(100%); /* Barra começa fora da tela à direita */
+    transition: transform 0.3s ease;
+    z-index: 150;
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Quando aberta, a barra entra no campo de visão */
+}
+
+.sidebar-nav a {
+    display: flex;
+    color: 46278eb3;
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+    top: 50px;
+    font-weight: 400;
+}
+.sidebar-nav a:hover{
+    color: #231641b3;
+    
+}
+
+.close-btn {
+    font-size: 30px;
+    color: #46278eb3;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 40px; /* Botão de fechar à direita */
+    font-size: 30px;
+}
+.close-btn:hover{
+    color: #231641b3;
+    
+}
+
+/* Botão de menu para telas menores */
+.menu-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #46278e;
+    display: none;
+}
+
+/* Responsivo: quando a largura for menor que 768px */
+@media (max-width: 1200px) {
+    .header {
+        padding: 20px;
+    }
+    .navbar {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+        position: absolute;
+        right: 40px;
+    }
+    .header {
+        min-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidebar {
+        display: none;
+    }
+}
+.slideshow-container {
+    top: 75px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 1500px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.slide {
+    width: 100%;
+    display: none; /* Esconde todas as imagens por padrão */
+    border-radius: 2px;
+}
+
+.slideshow-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 50%);
+    z-index: 2; /* Para garantir que o degradê fique acima da imagem */
+}
+
+.slide.active {
+    display: block; /* Mostra apenas a imagem ativa */
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#dishes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: var(--color-neutral-0);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.dish-heart {
+    position: absolute;
+    background-color: #623eb6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: white;
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.dish-description {
+    color: #434343;
+    text-align: center;
+}
+
+.dish-rate i {
+    color: gold;
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #623eb6;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+    background-color: #8256e7;
+}
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+    }
+} 
+
