@@ -30,19 +30,16 @@ SET time_zone = "+00:00";
 CREATE TABLE `pessoas` (
   `cod_pessoas` int(11) NOT NULL,
   `nome` varchar(200) NOT NULL,
-  `endereco` varchar(200) NOT NULL,
-  `telefone` varchar(16) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `data_nascimento` date NOT NULL
+  `senha` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `pessoas`
 --
 
-INSERT INTO `pessoas` (`cod_pessoas`, `nome`, `endereco`, `telefone`, `email`, `data_nascimento`) VALUES
-(20, 'MARLON MENA', 'ITABAIANA(PB) ', '83 981201387', 'marlon@gmail.com', '2000-01-31'),
-(21, 'marlon', 'ITABAIANA(PB) ', '83 983457661', 'a@gmail.com', '1993-06-17');
+INSERT INTO `pessoas` (`cod_pessoas`, `nome`, `email`, `senha`) VALUES
+
 
 --
 -- Índices para tabelas despejadas

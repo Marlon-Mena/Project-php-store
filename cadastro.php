@@ -18,20 +18,12 @@
                         <input type="text" class="form-control" name="nome" required> 
                     </div>
                     <div class="form-group">
-                        <label for="nome">Endereço</label>
-                        <input type="text" class="form-control" name="endereco"> 
-                    </div>
-                    <div class="form-group">
-                        <label for="nome">Telefone</label>
-                        <input type="text" class="form-control" name="telefone">
-                    </div>
-                    <div class="form-group">
                         <label for="nome">E-mail</label>
                         <input type="email" class="form-control" name="email"> 
                     </div>
                     <div class="form-group">
-                        <label for="nome">Data de Nascimento</label>
-                        <input type="date" class="form-control" name="data_nascimento">
+                        <label for="nome">Senha</label>
+                        <input type="password" class="form-control" name="senha">
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-voltar" value="Enviar">

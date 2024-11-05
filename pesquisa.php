@@ -23,19 +23,15 @@
                 <thead>
                     <tr>
                         <th scope="col">Nome</th>
-                        <th scope="col">Endereço</th>
-                        <th scope="col">Telefone</th>
                         <th scope="col">E-mail</th>
-                        <th scope="col">Data de Nascimento</th>
+                        <th scope="col">password</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row">Nome</th>
-                        <td>Rua X</td>
-                        <td>89 9 9999 8887</td>
                         <td>fulanodetal@prov.com.br</td>
-                        <td>07/09/1990</td> 
+                        <td>*******</td> 
                     </tr>
                 </tbody>
             </table>
@@ -44,25 +40,6 @@
         </div>
     </div>
 </div>
-
 </body>
 </html>
-
-
-<?php
-
-    if(insset($_POST['busca'])) {
-        $pesquisa = $_POST['busca'];
-    }
-    else {
-        $pesquisa = '';
-    }
-
-    include "conexao.php";
-
-    $sql = "SELECT * FROM pessoas WHERE nome LIKE '%$pesquisa%'";
-
-?>
-
-
 

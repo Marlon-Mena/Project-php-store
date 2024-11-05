@@ -14,13 +14,11 @@
             include "conexao.php";
 
             $nome = $_POST['nome'];
-            $endereco = $_POST['endereco'];
-            $telefone = $_POST['telefone'];
             $email = $_POST['email'];
-            $data_nascimento = $_POST['data_nascimento'];
+            $senha = $_POST['senha'];
 
             $sql = "INSERT INTO `pessoas`
-            (`nome`, `endereco`, `telefone`, `email`, `data_nascimento`) VALUES ('$nome','$endereco','$telefone','$email','$data_nascimento')";
+            (`nome`, `email`, `senha`) VALUES ('$nome','$email','$senha')";
             
             if(mysqli_query($conn, $sql)) {
                 echo "$nome Cadastrado com sucesso!";
