@@ -29,7 +29,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">Nome</th>
+                        <td scope="row">Nome</td>
                         <td>fulanodetal@prov.com.br</td>
                         <td>*******</td> 
                     </tr>

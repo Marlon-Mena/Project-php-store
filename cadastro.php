@@ -3,14 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/cadastro.css"> <!-- o caminho do css -->
+    <link rel="stylesheet" href=""> <!-- o caminho do css -->
     <title>Store</title>
   </head>
   <body>
 <!--cadastro de usuário-->
-    <div class="container">
-        <div class="row">
-            <div class="col">
+    
                 <h1>Cadastro!</h1>
                 <form action="cadastro_scripts.php" method="POST">
                     <div class="form-group">

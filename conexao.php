@@ -2,7 +2,7 @@
     $server = "localhost:3307"; // servidor / porta
     $user = "root"; // usuario
     $pass = ""; // sua senha ou a senha que você configurou
-    $bd = "Store";
+    $bd = "store";
 
     $conexao = mysqli_connect($server, $user, $pass, $bd);
 
