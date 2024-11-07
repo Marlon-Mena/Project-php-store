@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/home_page.css">
+    <title>Bem-Vindo</title>
+</head>
+<body>
+    
+    <header class="header">
+        <!--  ---------------------------------Botão do menu para dispositivos móveis------------------------------------- -->
+        <button class="menu-btn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+
+        <span><img src="./images/home_page/Blue_and_White_Circle_Retail_Logo__1_-removebg-preview.png" class="logo"></span>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ---------------------------------BARRA LATERAL------------------------------------------------------------------------------ -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">x</button>
+        <nav class="sidebar-nav">
+            <a href="home_page.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </aside>
+    <!-- ---------------------------------SLIDE------------------------------------------------------------------------------ -->
+    <div class="slideshow-container">
+        <img class="slide" src="./images/home_page/Banner horizontal ong de animais doação colorido.png" alt="Imagem 1">
+        <img class="slide" src="./images/home_page/Banner horizontal ong de animais doação colorido (1).png" alt="Imagem 2">
+        <img class="slide" src="./images/home_page/Banner horizontal ong de animais doação colorido (2).png" alt="Imagem 3">
+    </div>
+
+    <!-- ---------------------------------PRODUTOS------------------------------------------------------------------------------ -->
+    <section id="menu">
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="./images/home_page/MÁSCARA DE ARGILA.svg" style="width: 200px; height: auto; border-radius: 5px;" alt="">
+
+                <h3 class="dish-title">
+                    Máscara de Argila
+                </h3>
+
+                <span class="dish-description">
+                    Deixe sua pele mais macia e sedosa, além de dar um toque suave e contribuir para acalmar a pele
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$40,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="./images/home_page/SABONETE LÍQUIDO.svg" style="width: 200px; height: auto; border-radius: 5px;" alt="">
+
+                <h3 class="dish-title">
+                    Sabonete Líquido
+                </h3>
+
+                <span class="dish-description">
+                    Os óleos essenciais presentes no sabonete natural ajudam a equilibrar a saúde física, mental e emocional.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$100,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="./images/home_page/ACELERADOR SOLAR.svg" style="width: 200px; height: auto; border-radius: 5px;" class="dish-image" alt=""> <!--Foto 3-->
+
+                <h3 class="dish-title">
+                    Acelerador Solar
+                </h3>
+
+                <span class="dish-description">
+                    Proteja a pele da ação dos Raios UV proporcionando um bronzeado rápido, intenso, duradouro e mais bonito.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$60,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="./images/home_page/ÓLEO VEGETAL.svg" style="width: 200px; height: auto; border-radius: 5px;" class="dish-image" alt=""> <!--Foto 4-->
+
+                <h3 class="dish-title">
+                    Óleo Vegetal
+                </h3>
+
+                <span class="dish-description">
+                    Combata o envelhecimento, deixe sua pele bonita, hidratada e macia e até mesmo lidar com algumas doenças dermatológicas.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./js/home_page.js"></script>
+</html>
