@@ -247,6 +247,10 @@ body {
     transition: background-color .3s ease;
 }
 
+i {
+    color: white;
+}
+
 .btn-default:hover {
     background-color: #8256e7;
 }
@@ -262,7 +266,7 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .dish {
         width: 100%;
     }
