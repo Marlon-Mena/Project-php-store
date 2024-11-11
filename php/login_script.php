@@ -19,18 +19,18 @@
       if($user['senha'] == $senha) {
           // A senha está correta, faz o login
           $_SESSION['mensagem'] = "Bem-vindo, $user[nome]!";
-          header("Location: home_page.html"); // Redireciona para a página de sucesso
+          header("Location: ../index.html"); // Redireciona para a página de sucesso
           exit();
       } else {
           // A senha está incorreta
           $_SESSION['mensagem'] = "Senha incorreta.";
-          header("Location: login.php"); // Redireciona para a página de login
+          header("Location: cadastro.php"); // Redireciona para a página de login
           exit();
       }
   } else {
       // O email não foi encontrado
       $_SESSION['mensagem'] = "Email não encontrado.";
-      header("Location: login.php"); // Redireciona para a página de login
+      header("Location: cadastro.php"); // Redireciona para a página de login
       exit();
   }
 ?>

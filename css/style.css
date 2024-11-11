@@ -81,16 +81,12 @@ body {
 
 .sidebar-nav a {
     display: flex;
-    color: 46278eb3;
+    color: #532fa6b3;
     text-decoration: none;
     padding: 15px;
     position: relative;
     top: 50px;
     font-weight: 400;
-}
-.sidebar-nav a:hover{
-    color: #231641b3;
-    
 }
 
 .close-btn {
@@ -115,7 +111,6 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    color: #46278e;
     display: none;
 }
 
@@ -270,5 +265,4 @@ i {
     .dish {
         width: 100%;
     }
-} 
-
+}
