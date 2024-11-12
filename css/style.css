@@ -140,7 +140,6 @@ body {
 .slideshow-container {
     top: 75px;
     position: relative;
-    width: 100%;
     height: auto;
     max-width: 1500px;
     overflow: hidden;
@@ -148,9 +147,7 @@ body {
 }
 
 .slide {
-    width: 100%;
     display: none; /* Esconde todas as imagens por padrão */
-    border-radius: 2px;
 }
 
 .slideshow-container::before {
