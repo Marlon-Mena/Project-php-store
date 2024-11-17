@@ -12,7 +12,8 @@ if (isset($_POST['url']) && isset($_POST['nome']) && isset($_POST['description']
     
     // Execute a consulta
     if (mysqli_query($conexao_produto, $sql)) {
-        echo "Produto inserido com sucesso!";
+        $mensagem = "Produto Cadastrado com sucesso!";
+        header("Location: usuario.php?status=sucesso&mensagem=" . urlencode($mensagem));
     } else {
         echo "Erro ao inserir produto: " . mysqli_error($conexao_produto);
     }

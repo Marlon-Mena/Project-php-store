@@ -19,7 +19,7 @@
       if($user['senha'] == $senha) {
           // A senha está correta, faz o login
           $_SESSION['mensagem'] = "Bem-vindo, $user[nome]!";
-          header("Location: ../index.html"); // Redireciona para a página de sucesso
+          header("Location: ../produtos/usuario.php"); // Redireciona para a página de sucesso
           exit();
       } else {
           // A senha está incorreta

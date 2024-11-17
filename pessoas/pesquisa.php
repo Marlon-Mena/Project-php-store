@@ -126,7 +126,7 @@
             </div>
 
             <!-- Botão de voltar -->
-            <a href="cadastro.php" class="btn btn-info w-100">Voltar para o início</a>
+            <a href="../produtos/admin.php" class="btn btn-info w-100">Voltar para o início</a>
         </div>
     </div>
 </div>
