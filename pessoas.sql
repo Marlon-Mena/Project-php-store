@@ -39,7 +39,7 @@ CREATE TABLE `pessoas` (
 --
 
 INSERT INTO `pessoas` (`cod_pessoa`, `nome`, `email`, `senha`) VALUES
-(1, 'marlon', 'a@gmail.com', '1234');
+(1, 'ADMiN', 'admin@admin', 'apenas_eu');
 
 --
 -- Índices para tabelas despejadas
