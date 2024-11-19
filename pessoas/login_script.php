@@ -20,7 +20,7 @@ if (mysqli_num_rows($result) > 0) {
         // Verifica se o usuário é admin
         if ($email == "admin@admin") {
             $_SESSION['mensagem'] = "Bem-vindo, Administrador!";
-            header("Location: ../pessoas/pesquisa.php"); // Redireciona para a página de administração
+            header("Location: ../pessoas/admin.php"); // Redireciona para a página de administração
             exit();
         }
 
