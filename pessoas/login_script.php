@@ -22,13 +22,6 @@ if (mysqli_num_rows($result) > 0) {
             $_SESSION['mensagem'] = "Bem-vindo, Administrador!";
             header("Location: ../produtos/admin.php"); // Redireciona para a página de administração
             exit();
-        
-        }
-        if ($senha == "$senha") {
-            $_SESSION['mensagem'] = "Bem-vindo, Administrador!";
-            header("Location: ../produtos/admin.php"); // Redireciona para a página de administração
-            exit();
-        
         }
 
         // Para outros usuários
